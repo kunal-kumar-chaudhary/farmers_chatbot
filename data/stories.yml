@@ -1,0 +1,158 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+
+# - story: organic path 1 
+#   steps: 
+#   - intent: Organic Farming 1
+#   - action: utter_organic
+
+# - story: organic path 2
+#   steps: 
+#   - intent: Organic Farming 2
+#   - action: utter_contact
+
+- story: organic path
+  steps:
+  - intent: Organic Farming 1
+  - action: utter_organic
+
+- story: Water Management path 1
+  steps: 
+  - intent: Water Management 1
+  - action: utter_horse_power
+
+- story: Water Management path 2
+  steps: 
+  - intent: Water Management 2
+  - action: utter_irrigation_potato
+
+- story: Water Management path 3
+  steps: 
+  - intent: Water Management 3
+  - action: utter_irrigation_pumpkin
+
+- story: Post Harvest Preservation path
+  steps: 
+  - intent: Post Harvest Preservation
+  - action: utter_preserve_bg
+
+- story: Dairy Production path
+  steps: 
+  - intent: Dairy Production
+  - action: utter_vet
+
+- story: Storage Path
+  steps: 
+  - intent: Storage
+  - action: utter_store_pg
+
+- story: Soil Test Path
+  steps:
+  - intent: Soil Testing
+  - action: utter_test_soil
+
+- story: Power Roads path
+  steps:
+  - intent: Power Roads
+  - action: utter_potato_disease
+
+- story: Sowing Time path
+  steps:
+  - intent: Sowing Time
+  - action: utter_sow_mustard
+
+- story: Fishery Nutrition path
+  steps:
+  - intent: Fishery Nutrition
+  - action: utter_fish
+
+- story: nursery management path 1
+  steps:
+  - intent: Nursery Management 1
+  - action: utter_nursery_arecanut
+
+- story: nursery management path 2
+  steps:
+  - intent: Nursery Management 2
+  - action: utter_harmone
+
+- story: fish fingerling path
+  steps:
+  - intent: Fish Fingerling Production
+  - action: utter_fingerling
+
+
+- story: agriculture mechanization path 1
+  steps:
+  - intent: Agriculture Mechanization 1
+  - action: utter_fungal
+
+
+- story: agriculture mechanization path 2
+  steps:
+  - intent: Agriculture Mechanization 2
+  - action: utter_schemes
+
+
+- story: agriculture mechanization path 3
+  steps:
+  - intent: Agriculture Mechanization 3
+  - action: utter_tractor
+
+- story: integrated farming path
+  steps:
+  - intent: Integrated Farming 
+  - action: utter_loan
+
+- story: Tank ponds path
+  steps:
+  - intent: Tank Ponds
+  - action: utter_fish_farming
+
+- story: Field prep path
+  steps:
+  - intent: Field Preparation
+  - action: utter_prep
+
+- story: varities path
+  steps:
+  - intent: Varities
+  - action: utter_variety 
+
+- story: seeds and planting path
+  steps:
+  - intent: Seeds and Planting
+  - action: utter_planting
+
+- story: Cultural Practises path
+  steps:
+  - intent: Cultural Practises
+  - action: utter_practises
+
+- story: Fertilizer Use path
+  steps:
+  - intent: Fertilizer Use
+  - action: utter_fert
+
+
+- story: Nutrient Management path
+  steps:
+  - intent: Nutrient Management
+  - action: utter_nutrient
+
+- story: Plant Protection path
+  steps:
+  - intent: Plant Protection
+  - action: utter_pp

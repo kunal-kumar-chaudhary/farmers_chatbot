@@ -1,0 +1,492 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: Organic Farming
+    examples: |
+      - PROPER [DOSE]("quantity") OF [AZOTOBACTER]("medicine") IN THE FIELD
+      - How much [dose]("quantity") can be added in field for [AZOTOBACTER]("medicine")
+      - [what]("question") [amount]("quantity") of [AZOTOBACTER]("medicine") [dose]("quantity") should be added
+      - [dose]("quantity") of [AZOTOBACTER]("medicine") 
+      - THE KVK [CONTACT NUMBER]("contact") OF [LAKHIMPUR DISTRICT]("place")
+      - [phone number]("contact") of [LAKHIMPUR DISTRICT]("place")
+      - [LAKHIMPUR DISTRICT]("place") [phone number]("contact")
+      - [phone no]("contact") of [LAKHIMPUR DISTRICT]("place")
+
+  - intent: Water Management 1
+    examples: |
+      - [ASKING]("question") ABOUT [HORSE POWER]("power") OF [WATER PUMP]("equipment") 
+      - [what]("question") is the [horse power] if [water pump]("equipment")
+      - [water pump]("equipment") [horse power]("power")
+      - [horse power]("power") of the [water pump]("equipment")
+
+  - intent: Water Management 2
+    examples: |
+      - [Asking]("question") about [irrigation]("watering") in [potato]("crop")
+      - [irrigation]("watering") in [potato]("crop")
+      - about [potato]("crop") [irrigation]("watering")
+      - how is [irrigation]("watering") of [potato]("crop") done
+
+  - intent: Water Management 3
+    examples: |
+      - [QUERY]("question") RELATED TO [IRRIGATION]("watering") OF [PUMPKIN]("crop")
+      - [irrigation]("watering") of [pumpkin]("crop")
+      - about [pumpkin]("crop") [irrigation]("watering")
+      - how is [irrigation]("watering") of [pumpkin]("crop") done
+
+  - intent: Post Harvest Preservation
+    examples: |
+      - [QUERY]("question") ABOUT [PRESERVATION]("preservation") OF [BLACK GRAM]("crop")
+      - how to [preserve]("preservation") [black gram]("crop")
+      - [preserving]("preservation") [black gram]("crop")
+      - i want to [preserve]("preservation") [black gram]("crop")
+
+  - intent: Dairy Production
+    examples: |
+      - [ASKING]("question") FOR THE [VETERINARY EXPERT]("doctor")
+      - how to [contact]("contact") [veterinary expert]("doctor")
+      - [when]("timing") to call [veterinary expert]("doctor")
+      - [when]("timing") to call [vet]("doctor")
+      - [when]("timing") to call [vet expert]("doctor")
+      - [what]("question") are the [timings]("timing") for calling [vet expert]("doctor")
+      - [timings]("timing") to call [veterinary expert]("timing")
+      - [QUERY]("question") REGARDING [REARING]("care") OF [POULTRY]("agriculture").
+      - [rear]("care") [poultry]("agriculture")
+      - [rearing]("care") of [poultry]("agriculture")
+
+  - intent: Storage
+    examples: |
+      - [QUERY]("question") REGARDING STORAGE OF [PEDDY GRAIN]("crop")
+      - [how]("question") to store [peddy grain]("crop")
+      - storing of [peddy grain]("crop")
+      - storage of [peddy grain]("crop")
+
+  - intent: Soil Testing
+    examples: |
+      - [ASKING]("question") ABOUT [SOIL]("soil") TESTING
+      - [How]("question") to test [soil]("soil")
+      - testing of [soil]("soil")
+
+  - intent: Power Roads
+    examples: |
+      - [Asking]("question") about [viral disease]("disease") of [potato]("crop")
+      - [how]("question") to [cure]("cure") [viral disease]("disease") of [potato]("crop")
+      - [cure]("cure") for [viral disease]("disease") of [potato]("crop")
+      - help for [viral]("disease") [potato]("crop") [disease]("disease")
+      - solution for [viral]("disease") [potato]("crop") [disease]("disease") 
+      - [how]("question") to deal with [potato disease]("disease")
+
+  - intent: Sowing Time
+    examples: |
+      - [Asking]("question") about [sowing time]("timing") of [mustard]("crop")
+      - [When]("question") is the [sowing time]("timing") of [mustard]("crop")
+      - [when]("timing") to sow [mustard]("crop")
+      - [best time]("timing") to sow [mustard]("crop")'
+
+  - intent: Fishery Nutrition
+    examples: |
+      - [QUERY]("question") RELATED TO [FISHERY EXPERT]("doctor")
+      - [contact]("contact") [fishery expert]("doctor")
+      - [how]("question") to meet [fishery expert]("doctor")
+      - [fishery]("aquaculture")
+
+  - intent: Nursery Management 1
+    examples: |
+      - [Asking]("question") about [nursery management]("care") in [arecanut]("crop")
+      - how to [manage]("care") [arecanut]("crop")
+      - [management]("care") of [arecanut]("crop")
+
+  - intent: Nursery Management 2
+    examples: |
+      - [Asking]("question") about [flower]("crop") inducing hormone for [tomato]("crop")
+      - what is the [flower]("crop") for inducing hormone for tomato
+      - [how]("question") to induce [flower]("crop") in [tomato]("crop")
+
+  - intent: Fish Fingerling Production
+    examples: |
+      - [QUERY]("question") REGARDING [BIOFLOCK FISH FARMING]("aquaculture")
+      - [fish fingerling]("aquaculture")
+
+  - intent: Agriculture Mechanization 1
+    examples: |
+      - [ASKING]("question") ABOUT [FUNGAL INFECTION]("disease") IN [ARECANUT]("crop")
+      - [how]("question") to [cure]("cure") [fungal infection]("disease") in [arecanut]("crop") 
+      - [how]("question") to deal with [fungal infection]("disease") in [arecanut]("crop")
+      - solution for [fungal infection]("disease") in [arecanut]("crop")
+
+  - intent: Agriculture Mechanization 2
+    examples: |
+      - [ASKING]("question") ABOUT SCHEMES RELATED [PROCURING FARM MACHINERIES]("equipments")
+      - which schemes are there for [procuring farm machineries]("equipments")
+      - information about schemes under [farm machineries]("equipments")
+
+  - intent: Agriculture Mechanization 3
+    examples: |
+      - [ASKING]("question") ABOUT [SUBSIDY]("subsidy") FOR [TRACTOR PROCUREMENT]("equipments")
+      - [subsidy]("subsidy") for [tractor procurment]("equipments")
+
+  - intent: Integrated Farming
+    examples: |
+      - I want to [open a pig farm]("business") by taking [loan]("loan")
+      - [open a pig farm]("business") by taking [loan]("loan")
+      - [take loan]("loan") for [pig farm]("business")
+      - [how]("question") to [take loan]("loan") for [pig farm]("business")
+
+  - intent: Tank Ponds
+    examples: |
+      - [FISH FARMING]("aquaculture")
+      - tell about [fish farming]("aquaculture")
+
+  - intent: Field Preparation
+    examples: |
+      - [QUERY]("question") REGARDING [SPACING OF STRAWBERRY]("spacing")
+      - [how]("question") the [spacing of strawberry]("spacing") plant be done
+      - [spacing in strawberry]("spacing") plant
+      - [how much]("question") [space should be there between strawberry plant]("spacing")
+      - [QUERY]("question") REGARDING [PLANTING PROCEDURE]("procedure") FOR [ARECANUT]("crop")
+      - [what]("question") is the [planting procedure]("procedure") for [arecanut]("crop")
+      - [planting procedure]("procedure") for [arecanut]("crop")
+      - [how]("question") to plant [arecanut]("crop")
+      - [QUERY]("question") REGARDING SOWING TIME [POINTED GOURD]("crop")
+      - [what]("question") is the sowing time of [pointed gourd]("crop")
+      - in [which]("question") [months]("month") should we sow [pointed gourd]("crop")
+      - [What]("question") is the [fertilizer]("fertilizer") dose of [pointed gourd]("crop")
+      - [fertilizer]("fertilizer") dose of [pointed gourd]("crop")
+      - [ASKING]("question") ABOUT THE FIELD PREPARATION  OF [TORIA]("crop")
+      - [how]("question") to plant [toria]("crop")
+      - [QUERY]("question") REGARDING CONTROL OF [SUCKING PEST]("insect") IN [RIDGE GOURD]("crop")
+      - [How]("question") to control [sucking pest]("insect") in [ridge gourd]("crop")
+      - [asking]("question") about the [fertilizer]("crop") [doses]("amount") for [ash gourd]("crop")
+      - [which]("question") are the recommended [fertilizer]("fertilizer") [doses]("amount") for [ash gourd]("crop")
+      - [fertilizer]("fertilizer") [doses]("amount") for [ash gourd]("crop")
+      - [query]("question") regarding [fertilizer]("fertilizer") [doses]("amount") for [okra]("crop")
+      - [which]("question") are the recommended [fertilizer]("fertilizer") [doses]("crop") for [okra]("crop")
+      - [fertilizer]("fertilizer") [doses]("amount") for [okra]("crop")
+      - [asking]("question") about package and practices of [ash gourd]("crop")
+      - [QUERY]("question") REGARDING HOW TO PREPARE THE [CUTTINGS FROM THE CITRUS PLANTS]("cuttings")
+      - [how]("question") to deal with [cuttings from the citrus plants]("cuttings")
+      - [what]("question") to do with [cuttings from citrus plants]("cuttings")
+
+  - intent: Varities
+    examples: |
+      - [QUERY]("question") REGARDING [VARIETY]("variety") OF [BORO RICE]("crop")
+      - [What]("question") are the various [varities](variety) of [boro rice]("crop")
+      - [varities]("variety") of [boro rice]("crop")
+      - list the [varitites]("variety") of [boro rice]("crop")
+      - [QUERY]("question") REGARDING [VARIETY]("variety") OF [TORIA]("crop")
+      - [What]("question") are the various [varities]("variety") of [toria]("crop")
+      - [varities]("variety") of [toria]("crop")
+      - list the [varitites]("variety") of [toria]("crop")
+      - [Asking]("question") about [hybrid boro rice]("crop") [varieties]("variety")
+      - [What]("question") are the various [varities]("variety") of [hybrid boro rice]("crop")
+      - [varities]("variety") of [hybrid boro rice]("crop")
+      - list the [varitites]("variety") of [hybrid boro rice]("crop")
+      - [Asking]("question") about [cowpea]("crop") [varieties]("variety")
+      - [What]("question") are the various [varities]("variety") of [cowpea]("crop")
+      - [varities]("variety") of [cowpea]("crop")
+      - list the [varitites]("variety") of [cowpea]("crop")
+
+  - intent: Seeds and Planting
+    examples: |
+      - [ASKING]("question") ABOUT [PROCUREMENT]("procure") OF [HYBRID SEEDS]("seeds")
+      - [how]("question") to [procure]("procure") [hybrid seeds]("seeds")
+      - [Asking]("question") whether he can sow [hybrid okra]("seeds") [variety]("variety")
+      - Can we sow [hybrid okra]("seeds") [variety]("variety")
+      - is it possible to sow [hybrid okra]("seeds") [variety]("variety")
+      - [Asking]("question") about [Variety]("variety"), [Spacing]("spacing"), [Sowing time]("time")
+
+  - intent: Cultural Practises
+    examples: |
+      - REGARDING [SOWING TIME]("time") OF [ASH GOURD]("crop")
+      - What is the [sowing time]("time") of [ash gourd]("crop")
+      - which are the [best months]("month") to sow [ash gourd]("crop")
+      - in [which]("question") [months]("month") can we sow [ash gourd]("crop")
+      - REGARDING [SOWING TIME]("time") OF [PAPAYA]("crop")
+      - [What]("question") is the [sowing time]("time") of [papaya]("crop")
+      - which are the [best months]("month") to sow [papaya]("crop")
+      - in which [months]("month") can we sow [papaya]("crop")
+      - [ASKING]("question") ABOUT [SEED RATE OF MUSTARD]("rate")
+      - [What]("question") is the [seed rate of mustard]("rate")
+      - Tell the [seed rate of mustard]("rate")
+      - [ASKING]("question") ABOUT [TRANSPLANTING STAGE OF ARECANUT]("transplant")
+      - [When]("question") is the [transplanting stage of arecanut]("transplant")
+      - [what]("question") is the [trasnplanting stage of arecanut]("transplant")
+      - [QUERY]("question") REGARDING HOW TO [CONTROL]("control") [THE ALGAE]("bacteria") FROM THE [RICE FIELD]("crop").
+      - how to [control]("control") [algae]("bacteria") from [rice field]("crop")
+      - [how]("question") can we [control]("control") [algae]("bacteria") from [rice field]("crop")
+      - [how]("question") to prevent [algae]("bacteria") from [rice  field]("crop")
+      - [ASKING]("question") ABOUT RECOMMENDED [DOSE]("amount") OF [FERTILISER]("fertilizer") FOR [PAPAYA]("fruit")
+      - [what]("question") is the recommended [dose]("amount") of [fertiliser]("fertilizer") for [papaya]("fruit")
+      - [which]("question") [dose]("amount") of [fertiliser]("fertilizer") can be used for [papaya]("fruit")
+      - [Asking]("question") about ratio of [vermicompost]("fertilizer") and [cocopeat]("fibre") in raising [seedling]("seeds")
+      - [What]("question") is the ratio of [vermicompost]("fertilizer") and [cocopeat]("fibre") in raising [seedling]("seeds")
+      - [Asking]("question") about suitable [sali rice]("crop") [varieties]("variety") and [fertilizer]("fertilizer") [dose]("amount")
+      - [Which]("question") is the suitable [sali rice]("crop") [varity]("variety") and [fertilizer]("fertilizer") [dose]] for it
+      - [Asking]("question") about [pit size]("size")
+      - [What]("question") should be the [size of a pit]("size")
+      - [size of a pit]("size")
+
+  - intent: Fertilizer Use
+    examples: |
+      - [QUERY]("question") REGARDING [FERTILIZER]("fertilizer") [DOSE]("amount") OF [ARECANUT]("crop")
+      - [Which]("question") [fertilizer]("fertilizer") [dose]("amount") should we use for [arecanut]("crop")
+      - [Fertilizer]("fertilizer") for [arecanut]("crop")
+      - [QUERY]("question") REGARDING [FERTILIZER]("fertilizer") [DOSE]("amount") OF [CHILLI]("crop")
+      - [Which]("question") [fertilizer]("fertilizer") [dose]("amount") should we use for [chilli]("crop")
+      - [Fertilizer]("fertilizer") for [chilli]("crop")
+      - [QUERY]("question") REGARDING [FERTILIZER]("fertilizer") [DOSE]("amount") OF [RAPESEED]("crop")
+      - [Which]("question") [fertilizer]("fertilizer") [dose]("amount") should we use for [rapeseed]("crop")
+      - [Fertilizer]("fertilizer") for [rapseed]("crop")
+      - [QUERY]("question") REGARDING [FERTILIZER]("fertilizer") [DOSE]("amount") OF [LENTIL]("crop")
+      - [Which]("question") [fertilizer]("fertilzer") [dose]("amount") should we use for [lentil]("crop")
+      - [Fertilizer]("fertilizer") for [lentil]("crop")
+      - [QUERY]("question") REGARDING [FERTILIZER]("fertilizer") [DOSE]("amount") OF [MUSTARD]("crop")
+      - [Which]("question") [fertilizer]("fertilizer") [dose]("dose") should we use for [mustard]("crop")
+      - [Fertilizer]("fertilizer") for [mustard]("crop")
+      - [QUERY]("question") REGARDING [FERTILIZER]("fertilizer") [DOSE]("amount") OF [POINTED GOURD]("crop")
+      - [Which]("question") [fertilizer]("fertilizer") [dose]("amount") should we use for [pointed gourd]("crop")
+      - [Fertilizer]("fertilizer") for [pointed gourd]("crop")
+      - [ASKING]("question") ABOUT THE [APPLICATION OF VITAMINS]("vitamins") IN [TORIA]("crop")
+      - [what]("question") are the [applications of vitamins]("vitamins") in [toria]("crop")
+      - [QUERY]("question") REGARDING [FERTILIZER]("fertilizer") [DOSE]("amount") OF [POTATO]("crop")
+      - [Which]("question") [fertilizer]("fertilizer") [dose]("amount") should we use for [potato]("crop")
+      - [Fertilizer]("fertilizer") for [potato]("crop")
+      - [QUERY]("question") REGARDING [FERTILIZER]("fertilizer") [DOSE]("amount") OF [COLOCASIA]("crop")
+      - [Which]("question") [fertilizer]("fertilizer") [dose]("amount") should we use for [colocasia]("crop")
+      - [Fertilizer]("fertilizer") for [colocasia]("crop")
+      - [Query]("question") about [manure]("manure") and [fertilizer]("fertilizer") [doses]("crop")
+      - [information about [maure]("manure") and [fertilizer]("fertilizer") [doses]("amount")
+      - [Asking]("question") about [nutrient]("nutrient") contact in [DAP]("fertilizer") with respect to [Urea]("fertilizer") and [SSP]("fertilizer")
+      - [Asking]("question") about [fertiliser]("fertilizer") [timing]("time") of [coconut]("crop")
+      - [What]("question") [time]("time") interval should we [fertilize]("fertilizer") [coconut]("crop")
+      - At [what]("question") [time]("time") should we [fertilize]("fertilizer") [coconut]("crop")
+
+  - intent: Nutrient Management
+    examples: |
+      - [ASKING]("question") ABOUT THE APPLICATION OF [NUTRIENTS]("nutrient") IN [VEGETABLES]("crop")
+      - [What]("question") are the various applications of [nutrients]("nutrient") in [vegetables]("crop")
+      - [QUERY]("question") REGARDING CONTROL OF [BROWNING DISEASE]("disease") IN [CAULIFLOWER]("crop")
+      - [How]("question") to control [browning disease]("disease") in [cauliflower]("crop")
+      - [how]("question") to prevent [browning disease]("disease") in [cauliflower]("crop")
+      - [ASKING]("question") ABOUT APPLICATION OF [VITAMINS]("vitamins") IN [POTATO]("crop")
+      - [what]("question") are the applications of [vitamins]("vitamins") in [potato]("crop")
+      - [QUERY]("question") REGARDING [NUTRIENT]("nutrient") [MANAGEMENT]("management") IN [PUMPKIN]("crop").
+      - REGARDING [FLOWER]("flower") DROP IN [BRINJAL]("crop")
+      - [How]("question") to deal with dropping of [flower]("flower") in [brinjal]("crop")
+      - [how]("question") to prevent falling of [flower]("flower") in [brinjal]("crop")
+      - [AKING]("question") ABOUT HOW TO IMPROVE THE GROWTH OF THE [PUMPKIN PLANT]("crop").
+      - [how]("question") to improve [pumpkin plant]("crop") growth
+      - REGARDING [VITAMINS]("vitamin") TO APPLY FOR PROPER GROWTH OF [PADDY]("crop")
+      - [which]("question") [vitamins]("vitamins") should we apply for proper growth of [paddy]("crop")
+      - [QUERY]("question") REGARDING [NUTRIENT]("nutrient") [MANAGEMENT]("management") IN [CAULIFLOWER]("crop")
+      - [How]("question") is [management]("management") of [nutrients]("nutrient") in [cauliflower]("crop")
+      - [QUERY]("question") REGARDING [NUTRIENT]("nutrient") [MANAGEMENT]("management") IN [DOLICHOS BEAN]("crop")
+      - [How]("question") is [management]("management") of [nutrients]("nutrient") in [DOLICHOS BEAN]("crop")
+      - [QUERY]("question") REGARDING [BIO-LIME]("manure") IN [STRAWBERRY]("fruit")
+      - [How]("question") to deal with [bio-lime]("manure") in [strawberry]("fruit")
+      - [QUERY] REGARDING [NUTRIENT]("nutrient") [MANAGEMENT]("management") IN [POMEGRANATE]("fruit")                                                                                          
+      - [How]("question") is [management]("management") of [nutrients]("nutrient") in [POMEGRANATE]("fruit")
+      - [QUERY]("question") REGARDING [NUTRIENT]("nutrient") [MANAGEMENT]("management") IN [PADDY]("crop")
+      - [How]("question") is [management]("management") of [nutrients]("nutrient") in [paddy]("crop")
+      - [query]("question") regarding control of yellowing of leaves in [black gram]("crop").
+      - [how]("question") to prevent yellowing of leaves in [black gram]("crop")
+      - [QUERY]("question") RELATED TO [FERTILISER]("fertilizer") [DOSE]("amount") OF [ASSAM LEMON]("fruit")
+      - [Which]("question") [fertilizer]("fertilizer") [dose]("amount") should we use for [assam lemon]("fruit")
+      - [Fertilizer]("fertilizer") for [assam lemon]("fruit")
+      - [Asking]("question") about [flower]("flower") inducing hormone
+      - [which]("question") are the [flower]("flower") unducing hormone
+      - [QUERY]("question") REGARDING [NUTRIENT]("nutrient") [MANAGEMENT]("management") IN [CASHEWNUT]("fruit")
+      - [How]("question") is [management]("management") of [nutrients]("nutrient") in [cashewnut]("fruit")
+      - [QUERY]("question") REGARDING [NUTRIENT]("nutrient") [MANAGEMENT]("management") IN [RIDGE GOURD]("fruit")
+      - [How]("question") is [management]("management") of [nutrients](nutrient) in [ridge gourd]("fruit")
+      - [ASKING]("question") ABOUT APPLICATION OF [MICRONUTRIENT]("nutrient")
+      - [What]("question") is the application of [micronutrient]("nutrient")
+      - [ASKING]("question") ABOUT THE [TIME](time) OF BROADCASTING OF [UREA]("fertilizer")
+      - [what]("question") is the broadcasting [time]("time") of [urea]("fertilizer")
+      - [ASKING]("question") ABOUT CONTROL OF IMMATURE [FRUIT]("fruit") FALL IN [PUMPKIN]("fruit")
+      - [How]("question") to control immature [fruit]("fruit") fall in [pumpkin]("fruit")
+      - [ASKING]("question") ABOUT APPLICATION OF [POTASH]("fertilizer")
+      - [what]("question") is the application of [potash]("fertilizer")
+      - [ASKING]("question") ABOUT [NUTRIENT]("nutrient") DEFICIENCY IN [PUMPKIN]("fruit")
+      - [how]("question") to prevent [nutrient]("nutrient") deficiency in [pumpkin]("fruit")
+      - [how]("question") to control [nutrient]("nutrient") deficiency in [pumpkin]("fruit")
+      - [query]("question") regarding [fertilizer]("fertilizer") application in [citrus]("fruit")
+      - [ASKING]("question") ABOUT CONTROL OF [FLOWER]("flower") DROP IN [LITCHI]("fruit")
+      - [how]("question") to prevent [flower]("flower") drop in [litchi]("fruit")
+      - [how]("question") to control falling of [litchi]("fruit") [flower]("flower")
+
+  - intent: Plant Protection
+    examples: |
+      - REGARDING [FUNGAL ROT]("fungus") IN [TORIA]("crop")
+      - [how]("question") to prevent [fungal rot]("fungus") in [toria]("crop")
+      - [how]("question") to control [fungal rot]("fungus") in [toria]("crop")
+      - [how]("question") to deal with [fungal rot]("fungus") in [toria]("crop")
+      - [Asking]("questions") about [powdery mildew]("fungus") in  [blackgram]("crop")
+      - [how]("question") to prevent [powdery mildew]("fungus") in [blackgram]("crop")
+      - [how]("question") to control [powdery mildew]("fungus") in  [blackgram]("crop")
+      - [how]("question") to deal with [powdery mildew]("fungus") in  [blackgram]("crop")
+      - [Asking]("question") about  [mildew]("fungus") in  [mustard]("crop")
+      - [how]("question") to prevent [mildew]("fungus") in  [mustard]("crop")
+      - [how]("question") to control [mildew]("fungus") in  [mustard]("crop")
+      - [how]("question") to deal with [mildew]("fungus") in  [mustard]("crop")
+      - [how]("question") to prevent [RODENT IN POTATO FIELD]("rodents")
+      - [how]("question") to control [RODENT IN POTATO FIELD]("rodents")
+      - [how]("question") to deal with [RODENT IN POTATO FIELD]("rodents")
+      - [QUERY]("question") REGARDING [FUNGAL INFECTION]("fungus") IN [PEPPER]("crop")
+      - [how]("question") to prevent [FUNGAL INFECTION]("fungus") IN [PEPPER]("crop")
+      - [how]("question") to control [FUNGAL INFECTION]("fungus") IN [PEPPER]("crop")
+      - [how]("question") to deal with [FUNGAL INFECTION]("fungus") IN [PEPPER]("crop")
+      - [how]("question") to prevent [FRUIT FLY]("insect") IN [BOTTLE GOURD FIELD]("crop")
+      - [how]("question") to control [FRUIT FLY]("insect") IN [BOTTLE GOURD FIELD]("crop")
+      - [how]("question") to deal with [FRUIT FLY]("insect") IN [BOTTLE GOURD FIELD]("crop")
+      - [how]("question") to prevent Food dropping in [CARDAMUM]("fruit")
+      - [how]("question") to control FooD dropping in [CARDAMUM]("fruit")
+      - [how]("question") to deal with FooD dropping in [CARDAMUM]("fruit")
+      - [how]("question") to prevent [INSECT INFESTATION]("insect") IN [TORIA]("crop")
+      - [how]("question") to control [INSECT INFESTATION]("insect") IN [TORIA]("crop")
+      - [how]("question") to deal with [INSECT INFESTATION]("insect") IN [TORIA]("crops")
+      - [how]("question") to prevent [fungal disease]("fungus") in [mustard]("crop")
+      - [how]("crop") to control [fungal disease]("fungus") in [mustard]("crop")
+      - [how]("crop") to deal with [fungal disease]("fungus") in [mustard]("crop")
+      - [how]("question") to prevent [blight]("fungus") in [potato]("crop")
+      - [how]("question") to control [blight]("fungus") in [potato]("crop")
+      - [how]("question") to deal with [blight]("fungus") in [potato]("crop")
+      - [how]("question") to prevent [late blight]("fungus") in [potato]("crop")
+      - [how]("question") to control [late blight]("fungus") in [potato]("crop")
+      - [how]("question") to deal with [late blight]("fungus") in [potato]("crop")
+      - [how]("question") to prevent [INSECT INFESTATION]("insect") IN [BRINJAL]("crop")
+      - [how]("question") to control [INSECT INFESTATION]("insect") IN [BRINJAL]("crop")
+      - [how]("question") to deal [INSECT INFESTATION]("insect") IN [BRINJAL]("crop")
+      - [how](question) to prevent [WILTING]("fungus")
+      - [how]("question") to control [WILTING]("fungus")
+      - [how]("question") to deal [WILTING]("fungus")
+      - PLANT PROTECTION IN [POTATO]("crop")
+      - [how]("question") to protect [potato plant]("crop")
+      - PLANT PROTECTION IN [Black gram]("crop")
+      - [how]("question") to protect [black plant]("crop")
+      - [how]("question") to prevent [WILTING]("fungus") OF [FRENCH BEAN]("crop")
+      - [how]("question") to control [WILTING]("fungus") OF [FRENCH BEAN]("crop")
+      - [how]("question") to deal [WILTING]("fungus") OF [FRENCH BEAN]("crop")
+      - [how]("question") to prevent [leaf curl virus]("virus")
+      - [how]("question") to control [leaf curl virus]("virus")
+      - [how]("question") to deal [leaf curl virus]("virus")
+      - [Asking]("question") about seed rate of [lentil]("crop")
+      - [what]("question") is the seed rate of [lentil]("crop")
+      - [QUERY]("question") REGARDING [MANAGEMENT]("management") OF LEAF CURL IN [CHILLIES]("crop")
+      - [how]("question") to manage leaf curl in [chillies]("crop")
+      - [how]("question") to prevent [BEETLE]("insect") IN [PUMPKIN]("crop")
+      - [how]("question") to control [BEETLE]("insect") IN [PUMPKIN]("crop")
+      - [how]("question") to deal with [BEETLE]("insect") IN [PUMPKIN]("crop")
+      - [how]("question") to prevent [INSECT INFESTATION]("insect") IN [mango]("fruit")
+      - [how]("question") to control [INSECT INFESTATION]("insect") IN [mango]("fruit")
+      - [how]("question") to deal [INSECT INFESTATION]("insect") IN [mango]("fruit")
+      - [how]("question") to prevent [blight]("fungus") in [brinjal]("crop")
+      - [how]("question") to control [blight]("fungus") in [brinjal]("crop")
+      - [how]("question") to deal with [blight]("fungus") in [brinjal]("crop")
+      - [how]("question") to prevent [blight]("fungus") in [pumpkin]("crop")
+      - [how]("question") to control [blight]("fungus") in [pumpkin]("crop")
+      - [how]("question") to deal with [blight]("fungus") in [pumpkin]("crop") 
+      - [how]("question") to prevent [PESTS]("insect") IN [CAULIFLOWER]("crop")
+      - [how]("question") to control [PESTS]("insect") IN [CAULIFLOWER]("crop")
+      - [how]("question") to deal with [PESTS]("insect") IN [CAULIFLOWER]("crop")
+      - [how]("question") to prevent [INSECTS]("insect") IN [DOLICHOS BEAN]("crop")
+      - [how]("question") to control [INSECTS]("insect") IN [DOLICHOS BEAN]("crop")
+      - [how]("question") to deal [INSECT INSECTS]("insect") IN [DOLICHOS BEAN]("crop")
+      - [how]("question") to prevent [WILTING]("fungus") OF [tomato]("fruit")
+      - [how]("question") to control [WILTING]("fungus") OF [tomato]("fruit")
+      - [how]("question") to deal [WILTING]("fungus") OF [tomato]("fruit")
+      - [how]("question") to prevent [INSECT PEST]("insect") REMEDY IN [TORIA]("crop")
+      - [how]("question") to control [INSECT PEST]("insect") REMEDY IN [TORIA]("crop")
+      - [how]("question") to deal [INSECT PEST]("insect") REMEDY IN [TORIA]("crop")
+      - [how]("question") to prevent  [BACTERIAL WILT]("bacteria") IN [BRINJAL]("crop")
+      - [how]("question") to control  [BACTERIAL WILT]("bacteria") IN [BRINJAL]("crop")
+      - [how]("question") to deal  [BACTERIAL WILT]("bacteria") IN [BRINJAL]("crop")
+      - [how]("question") to prevent [MEALYBUG]("insect") IN [BLACKGRAM]("crop")
+      - [how]("question") to control [MEALYBUG]("insect") IN [BLACKGRAM]("crop")
+      - [how]("question") to deal [MEALYBUG]("insect") IN [BLACKGRAM]("crop")
+      - REMEDY FOR [FRUIT BORER]("bacteria") IN [BOTTLEGOURD]("crop")
+      - [how]("question") to deal with [fruit borer]("bacteria") in bottlegourd
+      - [BLIGHT SYMPTOMS]("disease") IN [BITTER GOURD]("disease")
+      - [how]("question") to detect [blight symptoms]("disease") in [bitter gourd]("crop")
+      - [QUERY]("question") REGARDING [SEED TREATMENT]("care") OF [MUSTARD]("crop")
+      - REMEDY FOR [FRUIT BORER]("bacteria") IN [lemon]("fruit")
+      - [how]("question") to deal with [fruit borer]("bacteria") in [lemon]("fruit")
+      - [BLIGHT SYMPTOMS]("disease") IN [lemon]("fruit")
+      - [how]("question") to prevent [BLIGHT]("disease") IN [DOLICHOS BEAN]("crop")
+      - [how]("question") to control [BLIGHT]("disease") IN [DOLICHOS BEAN]("crop")
+      - [how]("question") to deal [BLIGHT]("disease") IN [DOLICHOS BEAN]("crop")
+      - [how]("question") to prevent [leaf curl virus]("virus") of [bottlegourd]("crop")
+      - [how]("question") to control [leaf curl virus]("virus") of [bottlegourd]("crop")
+      - [how]("question") to deal [leaf curl virus]("virus") of [bottlegourd]("crop")
+      - [how]("question") to prevent [BUD DROP]("disease") IN [PUMPKIN]("crop")
+      - [how]("question") to control [BUD DROP]("disease") IN [PUMPKIN]("crop")
+      - [how]("question") to deal [BUD DROP]("disease") IN [PUMPKIN]("crop")
+      - [how]("question") to prevent [termite]("insect") problem
+      - [how]("question") to control [termite]("insect") problem
+      - [how]("question") to deal [termite]("insect") problem
+      - [how]("question") to prevent [WILTING]("fungus") OF [potato]("crop")
+      - [how]("question") to control [WILTING]("fungus") OF [potato]("crop")
+      - [how]("question") to deal [WILTING]("fungus") OF [potato]("crop")
+      - [how]("question") to prevent [root rot]("disease")
+      - [how]("question") to control [root rot]("disease")
+      - [how]("question") to deal [root rot]("disease")
+      - PLANT PROTECTION OF [RIDGE GOURD]("crop")
+      - [how]("question") to protect [ridge gourd plant]("crop")
+      - [how]("question") to prevent [bird attack]("disease")
+      - [how]("question") to control [bird attack]("disease")
+      - [how]("question") to deal [bird attack]("disease")
+      - [how]("question") to prevent [INSECT attack]("disease") in [mango]("fruit")
+      - [how]("question") to control [INSECT attack]("disease") in [mango]("fruit")
+      - [how]("question") to deal [INSECT attack]("disease") in [mango]("fruit")
+      - [how]("question") to prevent [LEAF BLIGHT]("disease") IN [COCONUT]("fruit")
+      - [how]("question") to control [LEAF BLIGHT]("disease") IN [COCONUT]("fruit")
+      - [how]("question") to deal [LEAF BLIGHT]("disease") IN [COCONUT]("fruit")
+      - [ASKING]("question") ABOUT THE [DOSES]("amount") OF [STREPTOMYCIN]("medicine")
+      - [how]("question") to use [doses]("amount") of [streptomycin]("medicine")
+      - [how]("question") to prevent [FOOT ROT]("disease") IN [BETEL VINE]("crop")
+      - [how]("question") to control [FOOT ROT]("disease") IN [BETEL VINE]("crop")
+      - [how]("question") to deal [FOOT ROT]("disease") IN [BETEL VINE]("crop")
+      - PLANT PROTECTION OF [cashew]("fruit")
+      - [how]("question") to protect [cashew]("fruit") plant
+      - [how]("question") to prevent [VIRAL INFECTION]("virus") IN [CHILLI]("crop")
+      - [how]("question") to control [VIRAL INFECTION]("virus") IN [CHILLI]("crop")
+      - [how]("question") to deal [VIRAL INFECTION]("virus") IN [CHILLI]("crop")
+      - [how]("question") to prevent [insect]("insect") attack
+      - [how]("question") to control [insect]("insect") attack
+      - [how]("question") to deal [insect]("insect") attack
+      - [how]("question") to prevent [root rot]("disease") disease in [cabbage]("crop")
+      - [how]("question") to control [root rot]("disease") disease in [cabbage]("crop")
+      - [how]("question") to deal [root rot]("disease") disease in [cabbage]("crop")
+      - PLANT PROTECTION OF [rice]("crop")
+      - [how]("question") to protect [rice plant]("crop")
+      - [how]("question") to prevent [caterpillar]("insect") from [leaf eating]("disease")
+      - [how]("question") to control spread of [caterpillars]("insect")
+      - [how]("question") to stop spread of [caterpillars]("insect")

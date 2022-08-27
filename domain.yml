@@ -1,0 +1,509 @@
+version: "3.1"
+intents:
+  - greet
+  - goodbye
+  - Organic Farming:
+    use_entities:
+      - quantity
+      - medicine
+      - question
+      - contact
+      - place
+  - Water Management 1:
+    use_entities:
+      - power
+      - question
+      - equipment
+  - Water Management 2:
+    use_entities:
+      - question
+      - watering
+      - crop
+  - Water Management 3:
+    use_entities:
+      - question
+      - watering
+      - crop
+  - Post Harvest Preservation:
+    use_entities:
+      - question
+      - preservation
+      - crop
+  - Dairy Production:
+    use_entities:
+      - question
+      - doctor
+      - contact
+      - timing
+      - agriculture
+      - care
+  - Storage:
+    use_entities:
+      - question
+      - crop
+  - Soil Testing:
+    use_entities:
+      - question
+      - soil
+  - Power Roads:
+    use_entities:
+      - question
+      - disease
+      - crop
+      - cure
+  - Sowing Time:
+    use_entitidz:
+      - question
+      - timing
+      - crop
+  - Fishery Nutrition:
+    use_entities:
+      - squestion
+      - doctor
+  - Nursery Management 1:
+    use_entities:
+      - question
+      - care
+      - crop
+  - Nursery Management 2:
+    use_entities:
+      - question
+      - crop
+  - Fish Fingerling Production:
+    use_entities:
+      - question
+      - aquaculture
+  - Agriculture Mechanization 1:
+    use_entities:
+      - question
+      - disease
+      - crop
+      - cure
+  - Agriculture Mechanization 2:
+    use_entities:
+      - question
+      - equipments
+  - Agriculture Mechanization 3:
+    use_entities:
+      - question
+      - subsidy
+      - equipments
+  - Integrated Farming:
+    use_entities:
+      - business
+      - loan
+      - question
+  - Tank Ponds:
+    use_entities:
+      - aquaculture
+  - Field Preparation:
+    use_entities:
+      - question
+      - spacing
+      - procedure
+      - crop
+      - fertilizer
+      - insect
+      - amount
+      - cuttings
+  - Seeds and Planting:
+    use_entities:
+      - procure
+      - seeds
+      - question
+      - variety
+      - time
+  - Varities:
+    use_entities:
+      - variety
+      - crop
+      - question
+  - Cultural Practises:
+    use_entities:
+      - time
+      - crop
+      - month
+      - question
+      - rate
+      - transplant
+      - control
+      - fertilizer
+      - algae
+      - bacteria
+      - fibre
+      - seeds
+      - fruit
+      - size
+  - Fertilizer Use:
+    use_entities:
+      - question
+      - crop
+      - amount
+      - fertilizer
+      - vitamins
+      - manure
+      - nutrient
+      - time
+  - Nutrient Management:
+    use_entities:
+      - question
+      - nutrient
+      - crop
+      - disease
+      - vitamins
+      - management
+      - manure
+      - fruit
+      - fertilizer
+      - flower
+      - time
+  - Plant Protection:
+    use_entities:
+      - fungus
+      - crop
+      - question
+      - rodents
+      - fruit
+      - insect
+      - virus
+      - management
+      - fruit
+      - bacteria
+      - medicine
+      - disease
+
+slots:
+  - medicine:
+      type: text
+  - contact:
+      type: text
+  - place:
+      type: text
+  - amount:
+      type: text
+  - quantity:
+      type: text
+  - power:
+      type: text
+  - equipment:
+      type: text
+  - watering:
+      type: text
+  - crop:
+      type: text
+  - preservation:
+      type: text
+  - question:
+      type: text
+  - doctor:
+      type: text
+  - timing:
+      type: text
+  - care:
+      type: text
+  - agriculture:
+      type: text
+  - disease:
+      type: text
+  - cure:
+      type: text
+  - aquaculture:
+      type: text
+  - equipments:
+      type: text
+  - subsidy:
+      type: text
+  - loan:
+      type: text
+  - business:
+      type: text
+  - spacing:
+      type: text
+  - procedure:
+      type: text
+  - month:
+      type: text
+  - insect:
+      type: text
+  - cuttings:
+      type: text
+  - variety:
+      type: text
+  - procure:
+      type: text
+  - seeds:
+      type: text
+  - time:
+      type: text
+  - rate:
+      type: text
+  - transplant:
+      type: text
+  - fibre:
+      type: text
+  - size:
+      type: text
+  - fertilizer:
+      type: text
+  - vitamins:
+      type: text
+  - manure:
+      type: text
+  - flower:
+      type: text
+  - nutrient:
+      type: text
+  - management:
+      type: text
+  - fruit:
+      type: text
+  - fungus:
+      type: text
+  - virus:
+      type: text
+  - bacteria:
+      type: text
+
+entities:
+  - medicine
+  - contact
+  - place
+  - amount
+  - quantity
+  - power
+  - equipment
+  - watering
+  - crop
+  - preservation
+  - question
+  - doctor
+  - timing
+  - care
+  - agriculture
+  - disease
+  - cure
+  - aquaculture
+  - equipments
+  - subsidy
+  - loan
+  - business
+  - spacing
+  - procedure
+  - month
+  - insect
+  - cuttings
+  - variety
+  - procure
+  - seeds
+  - time
+  - rate
+  - transplant
+  - fibre
+  - size
+  - fertilizer
+  - vitamins
+  - manure
+  - flower
+  - nutrient
+  - management
+  - fruit
+  - fungus
+  - virus
+  - bacteria
+
+responses:
+  - utter_greet:
+      - text: "Hey! How are you?"
+
+  - utter_happy:
+      - text: "Great, carry on!"
+
+  - utter_goodbye:
+      - text: "Bye"
+
+  - utter_organic:
+      - text: "MIX 4KG AZOTOBACTER WITH 100 KG COWDUNG AND KEEP IT FOR 1 DAY AND APPLY WITH 1 TON DUNG/BIGHA LAND"
+      - text: "=-- THE REQUIRED NUMBER IS----- 9435340387"
+
+  - utter_horse_power:
+      - text: "--WE  DON'T HAVE ANY INFORMATION REGARDING THIS. PLEASE CONTACT WITH YOUR DISTRICT AGRICULTURE OFFICE."
+
+  - utter_irrigation_potato:
+      - text: "The furrow method of irrigation has to be adopted. Three irrigations should be applied, first at 25 days (stolon formation stage), second at 60 days (tuber formation stage) and third at 80 days (tuber development stage) after emergence of sprouts. In case of application of mulching materials in furrows, only two irrigations are to be applied at 25 and 60 days after emergence of sprouts. At the time of application of irrigation, care should be taken not to submerge the ridges completely."
+
+  - utter_irrigation_pumpkin:
+      - text: "RECOMMENDED IRRIGATION ONCE AT EVERY  8-10 DAYS"
+
+  - utter_preserve_bg:
+      - text: " Storing pulses in bags treated with insecticide has been recommended.The fumigation with ethylene dibromide and methyl bromide mixture before storing can reduce losses to a great extent.** For further enquiry please contact Krishi Vigyan Kendra(KVK), Lakhimpur- 9435340387(Dr. Bhabesh Ch. Deka)"
+
+  - utter_vet:
+      - text: "CALL VETERINARY EXPERT IN BETWEEN 6AM- 10 PM."
+
+  - utter_store_pg:
+      - text: "--YOU CAN USE IRRI SUPER BAG FOR STORAGE. UNDER THIS BAG YOU CAN ADD DRY NEEM LEAVES AND POWDER BLACK PEPPER. YOU  CAN HANG MALATHION/CARBARYL TRAP INCIDE THE STORAGE THE ROOM."
+
+  - utter_test_soil:
+      - text: "VISIT KRISHI VIGYAN KENDRA, LAKHIMPUR FOR SOIL TESTING  OR FCONTACT DISTRICT AGRICULTURE OFFICE OR KVK, LAKHIMPUR- 9435340387 (PROGRAMME COORDINATOR )"
+
+  - utter_potato_disease:
+      - text: "Burn the effected plants in a separate area and spray malathion to the plants (2ml/lit of water) @ 3 sprays at 5 days interval"
+
+  - utter_sow_mustard:
+      - text: "The optimum time of sowing is middle of October to middle of November"
+
+  - utter_fish:
+      - text: "AS OUR FISHERY EXPERT IS NOT AVAILABLE NOW. KINDLY CONTACT KRISHI VIGYAN KENDRA OF YOUR DISTRICT. CONTACT NO.- 9435340387 NAME- DR. BHABESH CHANDRA DEKA."
+
+  - utter_nursery_arecanut:
+      - text: "Remove the perianth from the healthy seed nut and place vertically in the raised nursery bed 15 x 15 cm apart. Provide adequate shade in the nurserybed containing sand, soil and compost. When the seedlings attain 25-30 cmheight transfer the seedlings to the 2nd nursery bed at 30 x 30 cm apart. Keepthe seedlings in second nursery upto maximum age of 18 months."
+
+  - utter_harmone:
+      - text: " --Spray planofix (1ml/5lit of water) @ 2 sprays at 15 days interval and spray a micronutrient containing boron, magnesium and zinc (2g/lit of water) @ 2 sprays at 15 days interval"
+
+  - utter_fingerling:
+      - text: " PLEASE CONTACT WITH DR  BHABESH CH. DEKA (9435340387) PRINCIPAL SCIENTIST OF KRISHI VIGYAN KENDA, LAKHIMPUR."
+
+  - utter_fungal:
+      - text: "APPLY BORDEAUX MIXTURE @ 10 G PER LITER OF WATER AT AN INTERVAL OF 5 DAYS FOR 3 TIMES."
+
+  - utter_schemes:
+      - text: "TRACTORS DISTRIBUTION SCHEME IS GOING UNDER CHIF MINISTER SAMAGRA GRAMYA UNNAYAN YOJANA (CMSGUY) SCHEME."
+
+  - utter_tractor:
+      - text: "FOR SUBSIDY CONTACT WITH THE DISTRICT AGRICULTURAL OFFICE IN GROUP. UNDER NFSM AND RKVY PROJECTS FARM MACHINERIES CAN BE AVAIL IN GROUP."
+
+  - utter_loan:
+      - text: " APPROACH BANK, TAKE YOUR KISAN CREDIT CARD."
+
+  - utter_fish_farming:
+      - text: "MAGUR FARMING 150 GRAM IN 6 MONTH CATLA, ROHU AND MIRGAL 250 GRAM IN 6 MONTH FOR EUS APPLY LIME 10 KG PER BIGHA AND CIFAX, 130ML PER 10 L WATER FOR 1 BIGHA POND "
+
+  - utter_prep:
+      - text: "SPACING: PLANT TO PLANT 25-30 CM AND ROW TO ROW 30-40 CM"
+      - text: "SPACING - 3M-3M AND PLANT TO PLANT- 3M-3M, PIT SIZE 60CM. FILL THE PIT WITH MIXTURE OF DRYCOWDUNG AND SOIL  AND THEN PLANT THE SEEDLINGS."
+      - text: "SOWING TIME: JANUARY-FEBRUARY"
+      - text: "FERTILIZER DOSE- UREA-24 KG, SUPER- 42 KG, POTASH-12 KG PER BIGHA"
+      - text: "SEED RATE- 1.5 /BIGHA OF LAND, FERTILIZER- UREA- 12 KG, SSP 30 KG, MOP 25 KG PER BIGHA OF LAND"
+      - text: "SPRAY NEEM OIL 5 ML/LITER OF WATER OR NEEMICIN 2ML/LITER OF WATER 3 TIMES AT 5 DAYS INTERVAL  IN THE EVENING TIME IN THE ABSENCE OF RAIN. FOR IMPROVING THE GROWTH OF THE PLANTS SPRAY NPK 19:19:19 10 GRAM/LITER OF WATER 2 TIMES AT 15 DAYS INTERVAL AFTER 30 DAYS OF SOWING."
+      - text: "use recommended doses of fertilizer for ash gourd - DAP- 20 kg per bigha of land and potash 17 kg per bigha of land. mix the fertilizer 4-5 days before sowing the seed."
+      - text: " use recommended doses of fertilizer for okra--apply 2.5 kg of urea, 8 kg ssp, 3.5 kg mop per kotha of land. please apply apply half doses of urea along with other doses of fertilizer 4 days before sowing. mixed 500 gram of trichoderma viridi  and 500 gram carbaryl or malathion powder along with other fertilizer per kotha of land. treat the seed with trichoderma viridi 10 gram per kg of seed. spacing row to row- 45-45 cm and plant to plant 45-50 cm"
+      - text: "spacing- row to row- 2meter and plant to plant- 1 meter, chemical fertilizer- urea 20 kg, super 60 kg, potash 70 kkg and dry cow dung 2 tonne per bigha of land. Apply half of urea and other fertilizer 3-4 days before transplanting and half of urea should be apply 30 days after transplanting."
+      - text: "Stem cutting :The cuttings are usually prepared from fully matured stem. The size of cutting is 18 to 20 cm in length with a thickness of lead pencil. The upper cut is made 1 cm above the node and lower cut close below the node in a slanting manner. The cuttings are planted with a spacing of 30 cm x 30 cm in a slanting position in the nursery bed measuring 30 cm x 1 m x 10 m. The bed is prepared with a mixture of 1:1:1 decomposed cowdung, soil and sand respectively.Leaf-bud cutting :Leaf-bud cutting should be taken from the branch having healthy well developed bud and actively growing leaves. The cuttings consist of a leaf blade and short piece of the stem measuring 2 cm. The nursery bed should be prepared with a mixture of leaf-mould, soil and sand in a ratio of 3:2:1. The cuttings are planted in rows 15 cm x 25 cm spacing and buried upto 2/3rd to their length in a slanting position. Before planting,cutting should be treated with plant growth regulator, viz.ROTAX 2. The sprouted cuttings can be transplanted within 1 year in the field."
+
+  - utter_variety:
+      - text: "VARIETY OF BORO RICE: BANGLAMI, JOYMOTI, CAUVERY."
+      - text: "VARIETY OF TORIA : VARUNA, T 36, T 38."
+      - text: "Pro Agro 6444, DRRH 1, KRH 2, PAC 837 and Arize 6129 are the boro hybrid varieties"
+      - text: "Variety of cowpea is pusa barsati"
+
+  - utter_planting:
+      - text: "HYBRID SEED SHOULD BE PROCURED FROM REPUTED BRAND LIKE SYNGENTA. BAYER CROP AND EAST WEST SEEDS."
+      - text: "Yes, hybrid okra variety can be sown"
+      - text: "Variety: Pusa Sawani, Arka Anamika, Parbhani Kranti and Selected local cultivers. Red Wonder (Hills zone): Panchasira (North Brahmaputra Valley zone).Description:Pusa Sawani: Stem and leaf moderately hairy, top leaves deeply lobed (3-5 lobes) purple, top leaves deeply lobed (3-5 lobes) purple patch at base of yellow petal on both sides, slight purple pigmentation on stem, petiole and leaf base; first fruit is as 8th node, fruit dark green smooth, 5-ridged, about 10-12 cm long at marketable stage; maturity 50 days; suitable for both spring-summer and rainy seasons, was tolerant to YMV at the time of release but its tolerance has since broken down.Arka Anamika: Plant tall (180 cm). Erect, well branched; fruit long (200cm). Spineless lush green and tender, borne in two flushes, duration 120-135 days, Yield 175-250 q/ha; resistant to yellow vein mosaic virus.Parbhani Kranti: High yielder: resistant to yellow vein mosaic virus.Red wonder: Av. Yield 125.1 q/ha.Panchasira: Plant tall (158 cm.) well branched, (6), fruits long (19 cm) and average yield is 150 q/ha.Seed Rate:21 kg for spring summer crop (Jan-March)7 kg for rainy season crop (May-July).Spacing: (Row to Row x Plant to Plant) 30 cm x 15 cm (spring/summer crop),  45 cm x 30 cm (Rainy season crop).Seed Treatment and Method of Sowing:Pre sowing soaking of seeds in water for 24 hrs., enhance germination.Seeds should be directly sown in the pit and to be covered with sand and/or FYM."
+
+  - utter_practises:
+      - text: "SOWING TIME OF ASH GOURD- FEBRUARY-APRIL"
+      - text: "Sowing time of papaya is from april to june"
+      - text: "SEED RATE IS 1.5KF PER BIGHA LAND."
+      - text: "TRANSPLANTING STAGE OF ARECANUT- WHEN IT ATTAINS 5-6 LEAF STAGE."
+      - text: "DRAIN OUT THE WATER FROM THE FIELD THEN ALLOW TO DRY THE ALGAE. AFTER 2-3 DAYS AGAIN FILLED THE FIELD WITH WATER."
+      - text: "- APPLY N @500G, P @500G AND K @500G PER PLANT AFTER 2 MONTH OF PLANTING AND AT THE OF FRUIT SET- Apply FYM 10 Kg/plant as basal and 50 g in each of N, P and K per plant at bi-monthly intervals from the third month of planting after removing unwanted sex forms. Apply 20 g in each of Azospirillum and Phosphobacterium at planting again six months after planting.- PAPAYA CAN BE INTERCROP WITH CHILLI, BRINJAL, COLACASIA, BOTTL E GOURD AND PUMPKIN- FOR BHINDI APPLY NPK 19 ALL @5G/LITRE OF WATER"
+      - text: "Potting Mix Recipe 1 part of good quality red soil/top soil.1 part of cocopeat/peat moss.1 part of compost (Vermicompost/manure)"
+      - text: "High yielding varieties-Ranjit Sub1,Bahadur Sub1,Swarna Sub1,Jalashree,JalkuwariHybrid rice varietie-NK 5251,CRHR 5,PAC 835,US 312,PAC 8744Recommended fertilizer dose- Apply Urea @ 18kg/bigha in splits, SSP @ 16kg/bigha and MOP @ 9 kg/bigha"
+      - text: "Plant in pits of 60cm x 60cm x 60cm size in normal soils and In hard lateritic soils, pits of 1m x 1m x 1m size are recommended."
+
+  - utter_fert:
+      - text: "APPLY THE RECOMMENDED DOSES OF FERTILIZER- UREA 200 GRAM, SUPER 250 GRAM, POTASH-280GRAM, BORAX 50 GRAM AND DRY COWDUNG 20 KG PER PLANT IN 2 EQUAL SPLIT DOSE ONCE IN THE MONTH OF MARCH/APRIL AND OTHER IN THE MONTH SEPTEMBER/OCTOBER."
+      - text: "FERTILIZER- DRY COWGUNG 1.5 TONNE, UREA-34 KG, SUPER-36 KG, POTASH 13 KG PER BIGHA OF LAND. APPLY HALF OF UREA AND OTHER FERTILIZER 3-4 DAYS BEFORE TRANSPLANTING AND HALF OF UREA SHOULD BE APPLY 30 DAYS AFTER TRANSPLANTING."
+      - text: "FERTILIZER DOSE IN RAPESEED -UREA @ 12KG/BIGHA,SSP@ 30KG/BIGHA  AND MOP@ 25KG/BIGHA"
+      - text: "UREA 4.5 KG, SUPER 30 KG, POTASH 3.5 KG PER BIGHA. SEED RATE 4 KG PER BIGHA."
+      - text: "Apply Urea 12 kg, SSP 30 kg and MOP 25 kg per bigha before planting and then spray a crop booster ‘Green Harvest’  @ 25g/10lit of water at 30 days after planting."
+      - text: "APPLY FYM @ 3 TON/BIGHA,UREA @ 23 KG/BIGHA,SSP @ 40 KG/BIGHA AND MOP @ 11 KG/BIGHA"
+      - text: "SPRAY GREEN HARVEST CROP BOSTER 25 GRAM PER 10 LITER OF WATER 3 TIMES AT 15 DAYS INTERVAL IN THE EVENING TIME I  THE ABSENCE OF RAIN."
+      - text: "FERTILIZER DOSE ARE UREA @ 19KG, SSP @ 45 AND MOP@12 KG PER BIGHA"
+      - text: "FERTILIZER DOSE: UREA-19, SUPER-45, POTASH-12."
+      - text: "Apply 23kg urea, 50 kg SSP and 27 kg MOP  per bigha"
+      - text: "Manure and Fertilizer doses: Apply FYM@ 4-5kg, Urea- 750g, SSP- 1250g, MOP- 900g, Borax- 25g to 40g per plant. Apply the same dose after 6 months."
+      - text: "--The composition of DAP is 18% Nitrogen and  46% phosphorous while Urea contain 46% Nitrogen and SSP contains phosphorus (14.5 %), Sulphur (11%) and Calcium (21 %)."
+      - text: "Give first dose of fertiliser in april-may and second dose in september-october"
+
+  - utter_nutrient:
+      - text: "SPRAY MAHAPHAL/VIPUL/CROP BOOSTER @2GM/L WATER, 3 SPRAY AT 3 DAYS INTERVAL."
+      - text: "SPRAY ONE MICRONUTRIENT CONTAINING BORON AND MOLIBDENUM 3 TIMES ONCE IN A WEEK."
+      - text: "PLEASE SPRAY ONE VITAMINS LIKE- MOHAPHOL/SAGORIKA/BIOVITA 2 ML/LITER OF WATER AT 15 DAYS INTERVAL 3 TIMES IN THE EVENING TIME. AND SPRAY MICRONUTRIENT POTATO SPECIAL 6 GRAM/LITERS OF WATER 3 TIMES ONCE IN A WEEK"
+      - text: "SPRAY NPK 19:19:19 10 GRAM/LITER OF WATER 2 TIMES AT 15 DAYS INTERVAL IN THE EVENING TIME. AFTER COMPLETION OF THIS. PLEASE SPRAY ONE VITAMINS LIKE- TATA TRACEL/MOHAPHOL @ 2 ML/LITER OF WATER AT 15 DAYS INTERVAL."
+      - text: "SPRAY PLANOFIX @ 1ML/5 LITRE WATER,2 SPRAYS AT AN INTERVAL OF 10 DAYS"
+      - text: "SPRAY ONE VITAMIN LIKE MOHAPHOL/SAGORIKA/BIOVITA 2 ML/LITER OF WATER @ 15 DAYS INTERVAL UP TO THE END OF THE SEASON IN THE EVENING TIME IN THE ABSENCE OF RAIN"
+      - text: "APPLY NPK 19 19 19 @ 10GM/LITRE WATER,2 SPRAYS AT AN INTERVAL OF 14 DAYS"
+      - text: "SPRAY NPK 19 ALL @ 10 G PER LITER OF WATER 2 TIMES AT 15 DAYS INTERVAL."
+      - text: "VARIETY OF DOLICHOS BEAN: PUSA EARLY PROLIFIC, HD-18, DC-4 AND DC-5. SPRAYS VITAMINS LIKE MAHAPHOL @ 2ML /LITER OF WATER 2 TIMES AT 15 DAYS INTERVAL IN THE EVENING TIME IN ABSENCE OF RAIN."
+      - text: "PLEASE APPLY 4-5KG BIOLIME PER BIGHA"
+      - text: "APPLY MULTIPLEX MICRONUTRIENT AROUND THE ROOT ZONE."
+      - text: "SPRAY AGRIMIX @ 10 G/LITER OF WATER 2 TIMES AT 15 DAYS INTERVAL."
+      - text: "-- spray nkp 19:19:19 10 gram/liter of water 3 times at 15 days interval in the evening time in the absence of rain."
+      - text: "--Spray planofix (1ml/5lit of water) @ 2 sprays at 15 days interval"
+      - text: "PIT SHOULD BE FILLED WITH MIXTURE OF TOP SOIL, COMPOST (5 KG/PIT) AND SSP @ (150 GRAM/PIT)."
+      - text: "Spray Mohafol (2gm/lit of water) @ 2 sprays at 15 days interval and NPK19ALL (10gm/lit of water) @ 2 sprays at 15 days interval"
+      - text: "SPRAY MAHAPHAL @ 2ML/L WATER , AT 7 DAYS INTERVAL."
+      - text: "IF YOU ALREADY APPLY TWO TIMES, AND IF THE PENICLE HAVE SEEN THEN YOU CAN BROAD CAST THE 3RD PART OF UREA."
+      - text: "SPRAY BORON @ 5G/LITER OF WATER."
+      - text: "APPLY 5KG POTASH PER BIGHA AS FOLIAR APPLICATION IN THE FIELD"
+      - text: "APPLY NPK @ 10 G PER LITER OF WATER AT AN INTERVAL OF 15 DAYS FOR 2 TIMES.APPLY MAHAPHAL @ 2 ML PER LITER OF WATER AT AN INTERVAL OF 15 DAYS FOR 2 TIMES."
+      - text: "apply 300 gram of DAP and 100 gram of potash along with 10 kg of dry cowdung in ring method 30-45 cm away from the plant once in the month of february/ march and once in the month of october/ november."
+      - text: "APPLY PLANOFIX @ 1 ML/ 4.5L WATER, SPRAY AT 8 DAYS INTERVAL DURING FLOWERING AND FRUIT BEARING STAGE."
+
+  - utter_pp:
+      - text: "SPRAY BLITOX 50 @ 2GM/LITRE WATER,3 SPRAYS AT AN INTERVAL OF 5 DAYS.SPRAY GREEN HARVEST @ 25GM/10 LITRE WATER"
+      - text: "--Spray blitox (2gm/lit of water) @ 3 sprays at 5 days interval"
+      - text: "Spray saaf (2gm/lit of water) @ 3 sprays at 5 days interval"
+      - text: "MIXED ALUMINIUM PHOSPHIDE ALONG WITH PIECE OF POTATO AND PLACE IN THE FIELD ON DIFFERENT POSITION."
+      - text: "SPRAY IMIDACHLOPRID 1 ML/LITER OF WATER 3 TIMES AT 5 DAYS INTERVAL IN THE EVENING TIME AFTER THAT SPRAY NEEM OIL 5 ML PER LITER OF WATER AT 5-7 DAYS INTERVAL CONTINOUSLY UP TO THE END OF THE SEASON IN THE EVENING TIME ON THE ABSENCE OF RAIN."
+      - text: "SPRAYS VITAMINS LIKE -PLANOFIX 1ML /5LITER OF WATER @15 DAYS INTERVAL IN THE EVENING TIME. AND CONTACT WITH YOUR DISTRICT AGRICULTURE OFFICE"
+      - text: "SPRAY DIMETHOATE OR IMIDACLORPID @ 2 ML/LITER 3 TIMES AT 5 DAYS INTERVAL IN ABSENCE OF RAIN."
+      - text: "SPRAY RIDOMIL GOLD OR SAAF @2GM/L WATER. 3 SPRAY AT 3 DAYS INTERVAL."
+      - text: "SPRAY INDOFIL M-45 3 GRAM PER LITERS OF WATER 3 TIMES AT 7 DAYS INTERVAL IN THE EWVENING TIME"
+      - text: "Spray saaf or indofil (2g m/lit of water) @ 3 sprays at 5 days interval and remove the effected parts from the main field"
+      - text: "SPRAY NEEM OIL 5 ML/LITER OF WATER AT 5 DAYS INTERVAL CONTINOUSLY UP TO THE END OF THE SEASON."
+      - text: "SPRAY TATA MASTER @2GM/L WATER, 3 SPRAY AT 3 DAYS INTERVAL"
+      - text: "SPRAY MANCOZEB @ 2 G/LITER OF WATER 6 TIMES AT 10 DAYS INTERVAL IN THE EVENING TIME IN THE ABSENCE OF RAIN."
+      - text: "SPRAY BLITOX @ 2ML/LITER OF WATER 3 TIMES AT 5 DAYS INTERVAL IN THE EVENING TIME IN THE ABSENCE OF RAIN."
+      - text: "FIRST YOU HAVE TO DO THE OOZE TEST - DIP THE AFFECTED PART IN A GLASS OF WATER AND KEEP IT FOR 30 MINUTES. IF OOZE COMES OUT AND THE WATER BECOME YELLOWISH WHITE, THEN SPRAY ALSO APPLY TETRACYCLIN/ STREPTOCYCLIN (1GRAM/5 LIT OF WATER), NEAR THE ROOT ZONE 3 TIMES AT 5 DAYS INTERVAL AND IF OOZE DON’T SHOW IN THE WATER, AND THE WATER REMAINS CLEAN THEN SPRAY AND ALSO APPLY SAAF (2 GRAM/LIT OF WATER) NEAR THE ROOT ZONE 3 TIMES AT 5 DAYS INTERVAL."
+      - text: "Spray Imidacloprid (2ml/lit of water) @ 3 sprays at 5 days interval"
+      - text: "The optimum seed rate is 30 kg/ha or 4 kg/bigha."
+      - text: "SPRAY NEEM OIL 5ML/LITER OF WATER 3 TIMES @ 3 DAYS INTERVAL IN THE EVENING TIME.  SPRAY NPK 19:19:19 10 GRAM PER LITER OF WATER ALONG WITH 6 GRAM OF MICRONUTRIENT MIXTURE 3 TIMES AT 10 DAYS INTERVAL IN THE EVENING TIME. SPRAYS VITAMINS LIKE -BIOVITA/ MOHAPHOL/ SAGORIKA 2ML /LITER OF WATER @15 DAYS INTERVAL IN THE EVENING TIME AND TO BE CONTINUE UP TO THE SEASON END."
+      - text: "SPRAY NEEM OIL 5-7 ML/LITER OF WATER 3 TIMES AT 5 DAYS INTERVAL IN THE EVENING TIME IN THE ABSENCE OF RAIN."
+      - text: "SPRAY DECIS @ 2ML/LITER OF WATER 3 TIMES AT 5 DAYS INTERVAL IN THE EVENING TIME IN THE ABSENCE OF RAIN."
+      - text: "Spray blitox (2g m/lit of water) @ 3 sprays at 5 days interval and remove the effected parts from the main field"
+      - text: "SPRAY BLITOX @ 2ML/LITER OF WATER 3 TIMES AT 5 DAYS INTERVAL IN THE EVENING TIME IN THE ABSENCE OF RAIN."
+      - text: "SPRAY MALATHION 50 EC @2ML/L WATER, 3 SPRAY AT 5 DAYS IN INTERVAL."
+      - text: "SPRAY NEEM OIL 5ML- 7ML/LITER OF WATER AT 5 DAYS INTERVAL IN THE EVENING TIME"
+      - text: "FIRST YOU HAVE TO DO THE OOZE TEST - DIP THE AFFECTED PART IN A GLASS OF WATER AND KEEP IT FOR 30 MINUTES. IF OOZE COMES OUT AND THE WATER BECOME YELLOWISH WHITE, THEN SPRAY ALSO APPLY TETRACYCLIN/ STREPTOCYCLIN (1GRAM/5 LIT OF WATER), NEAR THE ROOT ZONE 3 TIMES AT 5 DAYS INTERVAL AND IF OOZE DON’T SHOW IN THE WATER, AND THE WATER REMAINS CLEAN THEN SPRAY AND ALSO APPLY SAAF (2 GRAM/LIT OF WATER) NEAR THE ROOT ZONE 3 TIMES AT 5 DAYS INTERVAL."
+      - text: "APPLY FURADON IN THE SOIL TO PREVENT FURTHER INFESTATION FROM PEST"
+      - text: "SPRAY AND APPLY BLITOX 50 3 GRAM PER LITERS OF WATER 3 TIMES AT 5 DAYS INTERVAL IN THE EVENING TIME."
+      - text: "SPRAY IMIDACLOPRID 1ML/LITERS OF WATER OR FIPRONIL 2ML/LITERS OF WATER 3 TIMES AT 5 DAYS INTERVAL IN THE EVENING TIME."
+      - text: "SPRAY EMAMECTIN BENZOATE @ 2ML/LITRE WATER,2 SPRAYS AT AN INTERVAL OF 5 DAYS"
+      - text: "DO THE OOZE TEST BY DIPPING THE INFECTED PART OF THE PLANT IN CLEARWATER AND SEE IF WHITE OOZE COMES OUT OF THE PLANT PART"
+      - text: "TREAT THE SEEDS WITH RIDOMIL GOLD @ 2 ML/KG OF SEEDS."
+      - text: "SPRAY EMAMECTIN BENZOATE @ 2ML/LITRE WATER,2 SPRAYS AT AN INTERVAL OF 5 DAYS"
+      - text: "PLUCK THE EXCESSIVELY AFFECTED LEAVESFROM THE PLANTS AND BURN THEM IN A SEPARATE PLACE OUT FROM THE FIELD. SPRAY COPPEROXYCHLORIDE (BLITOX-50/ BLUE COPPER) 3 GRAM PER LITER OF WATER 3 TIMES AT 5 DAYS INTERVALIN THE EVENING TIME IN THE ABSENCE OF RAIN. AFTER THAT SPRAY MICRONUTRIENT 6 ML/GM PER LITER OF WATER 3 TIMES ONCE IN A WEEK."
+      - text: "SPRAY ROGOR OR DECIS @ 2ML/LITER OF WATER 3 TIMES AT 5 DAYS INTERVAL IN THE EVENING TIME IN THE ABSENCE OF RAIN AFTER THAT SPRAYS VITAMINS LIKE -BIOVITA/ MOHAPHOL/ SAGORIKA 2ML /LITER OF WATER @15 DAYS INTERVAL IN THE EVENING TIME AND TO BE CONTINUE UP TO THE SEASON END."
+      - text: "AT FIRST SPRAY BORAX 6 GRAM/LITER OF WATER 3 TIMES @ 7 DAYS INTERVAL IN THE EVENING TIME. BY MAINTAINING OF 3 DAYS GAP SPRAY NEEM OIL 5 ML/LITER OF WATER AT 5 DAYS INTERVAL CONTINOUSLY UP TO THE END OF THE SEASON. AFTER COMPLETION OF 3 SPRAY OF BORAX, CONTINUE ONE VITAMIN LIKE- MOHAPHOL/SAGORIKA/BIOVITA 2 ML/LITER OF WATER @ 15 DAYS INTERVAL UP TO THE END OF THE SEASON IN THE EVENING TIME IN THE ABSENCE OF RAIN."
+      - text: "Spray malathion (2gm/lit of water) @3 spray at 5 days interval"
+      - text: "TREAT THE SEED WITH REDOMIL GOLD THEN DRY IN SHADE AND STORE IN A COOL AREA IN A SINGLE LAYER UNDER HAY OR PAPER IN BAMBOO BASKET OR TRAY."
+      - text: "PLEASE APPLY SAAF @ 2GRAM PER LITRE WATER OR BLITOX 50 @ 3GRAM PER LITRE WATER AT ROOT ZONE OF THE PLANT, 3 TIMES AT 5 DAYS INTERVAL"
+      - text: "SUGGESTED USE OF COLOURED RIBBON AROUND THE CULTIVATED FIELD"
+      - text: "SPRAY EMAMECTIN BENZOATE @ 2 GRAM PER LITER OF WATER 3 TIMES AT 7 DAYS INTERVAL. FOR FLOWERING AND INCREASING PRODUCTION SPAY PLANOFIX @ 1 ML PER 5 LITER OF WATER 2 TIMES AT 15 DAYS INTERVAL."
+      - text: "SUGGESTED FUMIGATION (DHUA) ALONG WITH CARBARYL POWDER"
+      - text: " RAMOVE THE HEAVILY AFFECTED LEAVES FROM THE PLANTS AND THEN SPRAY HEXACONAZOLE 10ML/LITER OF WATER OR COPPER OXYCHLORIDE (BLITOX-50) 3 GRAM/LITER OF WATER 3 TIMES AT 30 DAYS INTERVAL IN THE AFFECTED PLANTS. AFTER THIS APPLY THE RECOMMENDED DOSES OF FERTILIZER- UREA 1200 GRAM, SUPER 2 KG, POTASH-2KG, BORAX 50 GRAM AND DRY COWDUNG 25 KG PER PLANT IN 2 EQUAL SPLIT DOSE ONCE IN THE MONTH OF MARCH/APRIL AND OTHER IN THE MONTH SEPTEMBER/OCTOBER"
+      - text: "USE 2 GRAM PER 10 LITERS OF WATER."
+      - text: "APPLY BLITOX-50 3 GRAM/LITER OF WATER NEAR THE ROOT ZONE AND ALSO SPRAY BY COVERING THE WHOLE PLANT, 3 TIMES ONCE IN A WEEK N THE EVENING TIME. "
+      - text: "FOR CONTROL OF ANT: FIRST OF ALL YOU HAVE TO DESTROY THE CHAMBER OF ANTS IN SOIL BY LOOSENING THE SOIL WITH THE HELP OF KHURPI, HAND HOE ETC AND THEN APPLICATION OF PHORATE/ CARBARYL/ MALATHION  3ML/LITER OF WATER 3 TIMES AT 5 DAYS INTERVAL IN THE EVENING TIME IN THE ABSENCE OF RAIN."
+      - text: "TRIM THE INFECTED PORTION AND BURN IT AWAY FROM THE FIELD. APPLY ROGOR @ 2 ML PER LITER OF WATER AT AN INTERVAL OF 3-4 DAYS FOR 3 TIMES."
+      - text: "APPLY ROGOR , MIX 2 ML IN ONE LITRE WATER, SPRAY 3 TIMES AT 5 DAYS INTERVAL"
+      - text: "RECOMMENDED SPRAY OF FLUBENDIAMIDE (FAME) @2ML PER LITRE OF WATER AT ROOT ZONE AFTER DRAINING THE SOIL"
+      - text: "SPRAY MALATHION 50 EC @2ML/L WATER, 2 SPRAY AT 5 DAYS INTERVAL."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
